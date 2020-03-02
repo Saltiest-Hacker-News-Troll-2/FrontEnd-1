@@ -7,8 +7,8 @@ export default function Login() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-        <input name="username" ref={register} />
-        <input name="password" type="password" ref={register} />
+        <input name="username" value="" ref={register} />
+        <input name="password" type="password" value="" ref={register} />
         <input type="submit" />
       </form>
     )
