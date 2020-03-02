@@ -1,20 +1,19 @@
 import React from 'react';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
-} from "react-router-dom";
 import Login from "./components/Login";
 import HomePage from "./components/HomePage";
+import Signup from "./components/Signup";
+import Header from "./components/Header";
+import {BrowserRouter as Router, Route} from "react-router-dom";
 
 function App() {
+  
   return (
+  <Router>
     <div className="App">
-      <Login />
-     <h1>ITS WORKING!!!</h1>
-     <HomePage />
+    <Header />
+    <Route path="/HomePage" exact component={HomePage}/>
     </div>
+    </Router>
   );
 }
 
