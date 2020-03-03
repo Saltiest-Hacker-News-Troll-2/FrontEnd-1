@@ -7,9 +7,9 @@ export default function Signup() {
 
     return (
         <form onSubmit={handleSubmit(onSubmit)}>
-        <input name="username" value="" ref={register} />
-        <input name="username" value="" type="email" ref={register} />
-        <input name="password" type="password" value="" ref={register} />
+        <input name="username"  ref={register} />
+        <input name="username" type="email" ref={register} />
+        <input name="password" type="password" ref={register} />
         <input type="submit" />
       </form>
     )
