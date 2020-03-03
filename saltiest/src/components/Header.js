@@ -19,8 +19,8 @@ const HeaderDiv = styled.div`
 const HeaderUL = styled.ul`
     display: flex;
     text-decoration: none;
-    flex-basis: 75%;
-    justify-content: space-around;
+    flex-basis: 100%;
+    justify-content: flex-end;
 `
 
 const CuteButton = styled.button`
@@ -28,16 +28,17 @@ const CuteButton = styled.button`
     color: #5BC0EB;
     width: 120px;
     font-size: 1.4rem;
+    margin-right: 5%;
 `
 
 const FlexTest = styled.div`
     display: flex;
-    flex-basis: 10%;
+    flex-basis: 3%;
 `
 
 const StyledH1 = styled.h1`
     color: white;
-    margin-left: 10%;
+    margin-left: 95%;
 `
 
 export default function Header(){
@@ -47,9 +48,10 @@ export default function Header(){
                 <StyledH1>TrollFindr</StyledH1>
             </div>
         <HeaderUL>
+            <CuteButton><Link to="/HomePage">Home</Link></CuteButton>
             <CuteButton><Link to="/Login">Login</Link></CuteButton>
             <CuteButton><Link to="/Signup">Signup</Link></CuteButton>
-            <CuteButton><Link to="/HomePage">Home</Link></CuteButton>
+            
         </HeaderUL>
         </HeaderDiv>
     )
