@@ -20,7 +20,8 @@ export default function HomePage() {
                     <HomepageCard 
                     id={data.id}
                     name={data.employee_name}
-                    age={data.employee_age}
+                    rating={data.employee_age}
+                    comment={data.employee_salary}
                     />
                 )
             })}

@@ -6,13 +6,16 @@ display: flex;
 flex-direction: column;
 align-items: center;
 border: solid red;
+background-color: 
 `
 
 const CharacterCard = props => {
     return (
         <HomePageDiv className = "HomePageCard" key>
-        <h2>{props.name}</h2>
-        <p>{props.age}</p>
+        <button>Favorite</button>
+        <h2>Username: {props.name}</h2>
+        <p>Rating: {props.rating}</p>
+        <p>Comment: {props.comment}</p>
         </HomePageDiv>
     )
 }
