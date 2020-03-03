@@ -1,5 +1,5 @@
 import React from "react";
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const HomePageDiv = styled.div`
 display: flex;
@@ -10,6 +10,7 @@ background-color:
 `
 
 const CharacterCard = props => {
+    
     return (
         <HomePageDiv className = "HomePageCard" key>
         <button>Favorite</button>
