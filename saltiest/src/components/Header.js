@@ -48,9 +48,9 @@ export default function Header(){
                 <StyledH1>TrollFindr</StyledH1>
             </div>
         <HeaderUL>
-            <CuteButton><Link to="/HomePage">Home</Link></CuteButton>
-            <CuteButton><Link to="/Login">Login</Link></CuteButton>
-            <CuteButton><Link to="/Signup">Signup</Link></CuteButton>
+            <Link to="/HomePage"><CuteButton>Home</CuteButton></Link>
+            <Link to="/Login"><CuteButton>Login</CuteButton></Link>
+            <Link to="/Signup"><CuteButton>Signup</CuteButton></Link>
             
         </HeaderUL>
         </HeaderDiv>

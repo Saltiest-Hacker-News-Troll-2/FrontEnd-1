@@ -10,7 +10,6 @@ export default function HomePage() {
         axios.get(`http://dummy.restapiexample.com/api/v1/employees`)
             .then(function (response) {
                 setData(response.data.data);
-                console.log(response.data.data);
             })
     }, []);
 
