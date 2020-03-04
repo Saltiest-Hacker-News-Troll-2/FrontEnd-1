@@ -5,13 +5,12 @@ const HomePageDiv = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
-border: solid red;
-background-color: 
 `
 
 const CharacterCard = props => {
     
     return (
+        
         <HomePageDiv className = "HomePageCard" key>
         <button>Favorite</button>
         <h2>Username: {props.name}</h2>

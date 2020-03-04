@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from "react";
 import axios from "axios";
 import HomepageCard from "./HomePageCard";
+import Favorite from "./Favorite";
 
 export default function HomePage() {
     const [data, setData] = useState([]);
@@ -9,12 +10,12 @@ export default function HomePage() {
         axios.get(`http://dummy.restapiexample.com/api/v1/employees`)
             .then(function (response) {
                 setData(response.data.data);
-                console.log(response.data.data);
             })
     }, []);
 
     return (
         <div className="HomepageCard">
+                <Favorite/>
             {data.map(data => {
                 return (
                     <HomepageCard 
