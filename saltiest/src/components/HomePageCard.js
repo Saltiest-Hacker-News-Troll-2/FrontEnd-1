@@ -5,6 +5,11 @@ const HomePageDiv = styled.div`
 display: flex;
 flex-direction: column;
 align-items: center;
+border: solid black;
+width: 50%;
+margin-left: 25%;
+box-shadow: 10px 10px grey;
+margin-bottom: 2%;
 `
 
 const CharacterCard = props => {
