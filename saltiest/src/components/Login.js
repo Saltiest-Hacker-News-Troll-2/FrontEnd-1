@@ -6,6 +6,7 @@ const LoginForm = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 1%;
 `
 
 export default function Login() {

@@ -6,6 +6,7 @@ const SignupForm = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin: 1%;
 `
 
 export default function Signup() {
@@ -16,9 +17,9 @@ export default function Signup() {
       <SignupForm className="signup">
         <h1>Sign up</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
-        <input name="username"  ref={register} />
-        <input name="username" type="email" ref={register} />
-        <input name="password" type="password" ref={register} />
+        <input name="username" placeholder="username"  ref={register} />
+        <input name="email" placeholder="email" type="email" ref={register} />
+        <input name="password" placeholder="password" type="password" ref={register} />
         <input type="submit" />
       </form>
       </SignupForm>
