@@ -9,7 +9,7 @@ import {
 import Login from "./Login";
 import Signup from "./Signup";
 import HomePage from "./HomePage";
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const HeaderDiv = styled.div`
     display: flex;

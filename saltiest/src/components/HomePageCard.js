@@ -12,6 +12,7 @@ background-color:
 const CharacterCard = props => {
     
     return (
+        
         <HomePageDiv className = "HomePageCard" key>
         <button>Favorite</button>
         <h2>Username: {props.name}</h2>
